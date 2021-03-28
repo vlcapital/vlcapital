@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e6eaed;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+header {
+  flex: 0 1 auto;
+  width: 70%;
+  margin: 7.5vw auto 0 auto;
+}
+article {
+  flex: 0 1 auto;
+}
+footer {
+  flex: 1 1 auto;
+  position: relative;
+  padding-bottom: 7.5vw;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(kong-jun-Ptucfbc6Se8-unsplash-blurred.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 10vw;
+  opacity: 0.5;
+}
+p {
+  position: relative;
+  padding-top: 3em;
+  width: 70%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+.logo {
+  width: min(15.6vw, 10.4em);
+  display: table-cell;
+  background-image: url(logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.content {
+  padding: 10px;
+  display: table-cell;
+  vertical-align: top;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e34234;
+}
+.vermillion {
+  font-size: min(7.8vw, 5.2em);
+}
+.leaf {
+  color:#bf9000;
+  font-size: min(7.8vw, 5.2em);
+}
+.capital {
+  font-size: min(3vw, 2em);
+}
+@media screen and (max-width: 450px) {
+  header {
+    width: 90%;
+  }
+  p {
+      width: 90%;
+      font-size: 1em;
+  }
+}
