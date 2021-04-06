@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   background-image: url(autumn-autumn-leaves-sky-autumn-sky-wallpaper-1600.jpg);
@@ -12,50 +12,31 @@ body {
   margin: auto;
   padding: 0;
 }
-.wrapper {
+.spacer {
   margin: 7.5vw auto 7.5vw 0;
-  width: min(70vw, 750px);
+  max-width: 70vw;
+  width: 750px;
   background: rgba(255, 255, 255, .5);
-  padding: max(10px, 2vw);
+  padding: 5px;
   border-radius: 25px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+}
+.wrapper {
+  padding: 2vw;
   display: flex;
   flex-flow: column;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
 }
 .container {
   flex: 0 1 auto;
+}
+.container img {
+  max-width: 83.2%;
 }
 p {
   position: relative;
   padding-top: 3em;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.25em;
-}
-.logo {
-  width: min(15.6vw, 10.4em);
-  display: table-cell;
-  background-image: url(logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-.content {
-  padding: 10px;
-  display: table-cell;
-  vertical-align: top;
-  white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #e34234;
-}
-.vermillion {
-  font-size: min(7.8vw, 5.2em);
-}
-.leaf {
-  color:#bf9000;
-  font-size: min(7.8vw, 5.2em);
-}
-.capital {
-  font-size: min(3vw, 2em);
 }
 @media screen and (max-width: 450px) {
   body {
